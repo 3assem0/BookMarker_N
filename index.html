@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="icon" href="img/Remove background project (1).png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-warning-subtle">
+    <div class="home">
+        <div class="part-1 d-flex my-5 justify-content-center">
+            <h1 class="py-2"><span>Bookmarker</span></h1>
+        </div>
+        <div class="container">
+        <div class="part-2 w-100 p-3 py-3 d-flex flex-column justify-content-center align-items-center gap-4">
+            <h2 class="hedh2">
+                <i class="fa-solid fa-bookmark"></i>
+                Bookmark your favorite sites 
+                <i class="fa-solid fa-bookmark"></i>
+            </h2>
+            <div class="site-name w-100 d-flex flex-column justify-content-center">
+                <label for="bookmarkName" class="lab d-flex align-items-center pb-2 fw-semibold"><i class="fa-solid ico fa-book-bookmark pe-2"></i><h2>Site Name :</h2></label>
+                <input type="text" placeholder="Bookmark Name" class="form-control" id="siteNameInput">
+                <div id="siteNameAlert" class="alert alert-danger mt-1 d-none is-valid is-invalid">
+                  <ul class="p-0 m-0 p-2">
+                    <li>Your input should begin with a word (a sequence of letters, digits, or underscores) that is at least 3 characters long.</li>
+                    <li>Valid characters: Only use letters (a-z, A-Z), digits (0-9), and underscores (_). No special characters or punctuation marks are allowed</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="site-url w-100 d-flex flex-column justify-content-center">
+                <label for="bookmarkURL" class="lab align-items-center d-flex pb-2 fw-semibold">
+                  <i class="fa-solid ico fa-link pe-2"></i><h2>Site URL :</h2></label>
+                <input type="url" placeholder="Website URL" class="form-control" id="siteUrlInput">
+                <div id="siteUrlAlert" class="alert alert-danger mt-1 d-none is-valid is-invalid">
+                  <ul class="p-0 m-0 p-2">
+                    <li> The URL must include a domain name consisting of word characters (letters, digits, and underscores).</li>
+                    <li>Examples: http://www.example.com</li>
+                  </ul>
+                </div>
+              </div>
+              <button onclick="addsite()" class="btn btnm py-2 px-5">Submit</button>
+        </div>
+        </div>
+        <div class="part-3">
+            <div class="container">
+              <!-- table-striped  -->
+                <table class="my-3 table text-center ">
+                  <!-- class="thead-dark vip text-center" -->
+                  <thead>
+                      <th>Index</th>
+                      <th>Site Name</th>
+                      <th>Visit</th>
+                      <th>Delete</th>
+                  </thead>
+                  <tbody id="tableBody">
+                  </tbody>
+                </table>
+              </div>
+        </div> 
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="container text-center">
+        <div class="row text-muted">
+          <p>Copy Right 2024 © By Assem All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+    <!--End footer -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="x.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</body>
+</html>
